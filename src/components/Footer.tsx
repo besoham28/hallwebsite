@@ -21,10 +21,17 @@ const Footer = () => {
               a venue that matches your vision — and exceeds your expectations.
             </p>
             <div className="flex flex-wrap gap-3 mt-8">
-              {[Facebook, Instagram, Youtube, Twitter].map((Icon, i) => (
+              {[
+                { Icon: Facebook, href: "#" },
+                { Icon: Instagram, href: "https://instagram.com/photronix.28" },
+                { Icon: Youtube, href: "#" },
+                { Icon: Twitter, href: "#" },
+              ].map(({ Icon, href }, i) => (
                 <a
                   key={i}
-                  href="#"
+                  href={href}
+                  target={href !== "#" ? "_blank" : undefined}
+                  rel={href !== "#" ? "noopener noreferrer" : undefined}
                   className="w-12 h-12 border border-gold/30 flex items-center justify-center text-gold/60 hover:bg-gold hover:text-background transition-all duration-300"
                 >
                   <Icon size={22} />
