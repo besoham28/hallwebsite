@@ -57,25 +57,28 @@ const Footer = () => {
             </ul>
           </div>
 
-        <div>
-          <h4 className="font-display text-lg font-semibold text-gold mb-4">Contact Info</h4>
-          <ul className="space-y-3 font-body text-base text-cream/60">
-            <li>123, Shivaji Nagar, Pune</li>
-            <li>Maharashtra 411001</li>
-            <li>+91 87677 59598</li>
-            <li>info@mangalkaryalay.com</li>
-          </ul>
+          <div>
+            <h4 className="font-display text-lg font-semibold text-gold mb-4">Contact Info</h4>
+            <ul className="space-y-3 font-body text-base text-cream/60">
+              <li>123, Shivaji Nagar, Pune</li>
+              <li>Maharashtra 411001</li>
+              <li>+91 87677 59598</li>
+              <li>info@mangalkaryalay.com</li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-    <div className="border-t border-gold/10 py-6">
-      <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center">
-        <p className="font-body text-sm text-cream/50 text-center">
-          © 2026 Mangal Karyalay. All rights reserved.
-        </p>
+      <div className="border-t border-gold/10 py-6">
+        <div className="container mx-auto px-4 flex flex-col items-center justify-center space-y-2">
+          <p className="font-body text-sm text-gold/60 text-center tracking-widest uppercase text-xs font-semibold">
+            CREATED AND DESIGNED BY BESOHAM
+          </p>
+          <p className="font-body text-sm text-cream/50 text-center">
+            © 2026 Mangal Karyalay. All rights reserved.
+          </p>
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
   );
 };
 
